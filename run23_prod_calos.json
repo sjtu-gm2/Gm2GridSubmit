@@ -1,0 +1,48 @@
+{
+    "run2" : {
+        "dataset" : ["gm2pro_daq_offline_dqc_run2B_5126A","gm2pro_daq_offline_dqc_run2C_51224A","gm2pro_daq_offline_dqc_run2D_5123A","gm2pro_daq_offline_dqc_run2E_5124BC","gm2pro_daq_offline_dqc_run2F_5125AB","gm2pro_daq_offline_dqc_run2G_5125A","gm2pro_daq_offline_dqc_run2H_5125A"],
+        "//comment" : [],
+        "fcl" : "./fcls_run2/run2_seed_scan.fcl",
+        "output_dir" : "/pnfs/GM2/scratch/users/chengc/Full_production_run23_seeds_reprod/seed_scan",
+        "nfile_per_job" : 500,
+        "options" : "--daq --ana --memory 4 --lifetime 10h --localArea --subgroup=gm2 --offsite=no",
+        "separation_time" : 3600
+    },
+    "run2F_skip_calo18" : {
+        "dataset" : ["gm2pro_daq_offline_dqc_run2F_5125AB"],
+        "//comment" : [],
+        "fcl" : "./fcls_run2/run2F_skipCalo18_seed_scan.fcl",
+        "output_dir" : "/pnfs/GM2/scratch/users/chengc/Full_production_run23_seeds_reprod/seed_scan_skipCalo18",
+        "nfile_per_job" : 500,        
+        "options" : "--daq --ana --memory 4 --lifetime 10h --localArea --subgroup=gm2 --offsite=no",
+        "separation_time" : 3600
+    },
+    "run3a_1" : {        
+        "dataset" : ["gm2pro_daq_offline_dqc_run3C_5218A","gm2pro_daq_offline_dqc_run3D_5218A","gm2pro_daq_offline_dqc_run3E_5218A","gm2pro_daq_offline_dqc_run3F_5218A","gm2pro_daq_offline_dqc_run3G_5218A","gm2pro_daq_offline_dqc_run3I_5218A","gm2pro_daq_offline_dqc_run3J_5218B","gm2pro_daq_offline_dqc_run3K_5218A","gm2pro_daq_offline_dqc_run3L_5218A"],
+        "//comment finished" : [],
+        "fcl" : "./fcls_calos/run3a_seed_scan.fcl",
+        "output_dir" : "/pnfs/GM2/scratch/users/chengc/Full_production_run23_calos/seed_scan",
+        "nfile_per_job" : 500,
+        "options" : "--daq --ana --memory 4 --lifetime 10h --localArea --subgroup=gm2 --offsite=no",
+        "separation_time" : 3000
+    },
+    "run3b" : {
+        "dataset" : ["gm2pro_daq_offline_dqc_run3N_5217ABC","gm2pro_daq_offline_dqc_run3O_5217A"],
+        "//comment" : ["all finished"],
+        "fcl" : "./fcls_calos/run3b_seed_scan.fcl",
+        "output_dir" : "/pnfs/GM2/scratch/users/chengc/Full_production_run23_calos/seed_scan_resub",
+        "nfile_per_job" : 500,
+        "options" : "--daq --ana --memory 4 --lifetime 10h --localArea --subgroup=gm2 --offsite=no",
+        "separation_time" : 3000
+    },
+    "run3a_2" : {
+        "dataset" : ["gm2pro_daq_offline_dqc_run3B_5218B","gm2pro_daq_offline_dqc_run3M_5218B"],
+        "//comment finished" : [],
+        "fcl" : "./fcls_calos/run3a_seed_scan.fcl",
+        "output_dir" : "/pnfs/GM2/scratch/users/chengc/Full_production_run23_calos/seed_scan",
+        "nfile_per_job" : 500,
+        "options" : "--daq --ana --memory 4 --lifetime 10h --localArea --subgroup=gm2 --offsite=no",
+        "separation_time" : 3000
+    }
+    
+}
