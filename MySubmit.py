@@ -4,7 +4,7 @@ import ROOT as R
 hadd_dir = 'hadd' # grid
 
 hadd_tag = 'total'
-ups_setup = '. `/cvmfs/gm2.opensciencegrid.org/prod/external/ups/v6_0_7/Linux64bit+3.10-2.17/bin/ups setup jobsub_client v1_3_5`'
+ups_setup = '. `/cvmfs/gm2.opensciencegrid.org/prod/external/ups/v6_0_7/Linux64bit+3.10-2.17/bin/ups setup jobsub_client`'
 
 def local_test(data_config):
     cmd = 'gm2 -c {0:} -s {1:} -T local_test.root'.format(data_config['fcl'],data_config['test_file'])
