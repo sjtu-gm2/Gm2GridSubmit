@@ -4,7 +4,7 @@
         "//comment" : [],
         "fcl" : "./fcls_run2/run2_seed_scan.fcl",
         "output_dir" : "/pnfs/GM2/scratch/users/chengc/Full_production_run23_seeds_reprod/seed_scan",
-        "nfile_per_job" : 500,
+        "nfile_per_job" : 400,
         "options" : "--daq --ana --memory 4 --lifetime 10h --localArea --subgroup=gm2 --offsite=no",
         "separation_time" : 3600
     },
